@@ -29,9 +29,15 @@
 		BA097CF72C3FFDC1004C4CE4 /* libg7221codec.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA097CE32C3FFDC1004C4CE4 /* libg7221codec.a */; };
 		BA097CF82C3FFDC1004C4CE4 /* libresample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA097CE42C3FFDC1004C4CE4 /* libresample.a */; };
 		BA097CF92C3FFDC1004C4CE4 /* libwebrtc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA097CE52C3FFDC1004C4CE4 /* libwebrtc.a */; };
+		BA1462CD2C4040770067BF46 /* CustomPJSUA2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BA1462C82C4040770067BF46 /* CustomPJSUA2.cpp */; };
+		BA1462CE2C4040770067BF46 /* CustomPJSUA2.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BA1462C92C4040770067BF46 /* CustomPJSUA2.hpp */; };
+		BA1462CF2C4040770067BF46 /* wrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = BA1462CA2C4040770067BF46 /* wrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA1462D02C4040770067BF46 /* wrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = BA1462CB2C4040770067BF46 /* wrapper.mm */; };
 		BAF8C33F2C3FFE260060C817 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF8C33E2C3FFE260060C817 /* AVFoundation.framework */; };
 		BAF8C3412C3FFE300060C817 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF8C3402C3FFE300060C817 /* AudioToolbox.framework */; };
 		BAF8C3632C4000EF0060C817 /* PJSIPLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAF8C3622C4000EF0060C817 /* PJSIPLibrary.swift */; };
+		BAF8C3B42C4024DF0060C817 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF8C3B32C4024DF0060C817 /* Foundation.framework */; };
+		BAF8C3B62C4024FA0060C817 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAF8C3B52C4024FA0060C817 /* CoreMedia.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,9 +64,15 @@
 		BA097CE32C3FFDC1004C4CE4 /* libg7221codec.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libg7221codec.a; path = Libraries/libg7221codec.a; sourceTree = "<group>"; };
 		BA097CE42C3FFDC1004C4CE4 /* libresample.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libresample.a; path = Libraries/libresample.a; sourceTree = "<group>"; };
 		BA097CE52C3FFDC1004C4CE4 /* libwebrtc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libwebrtc.a; path = Libraries/libwebrtc.a; sourceTree = "<group>"; };
+		BA1462C82C4040770067BF46 /* CustomPJSUA2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CustomPJSUA2.cpp; sourceTree = "<group>"; };
+		BA1462C92C4040770067BF46 /* CustomPJSUA2.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CustomPJSUA2.hpp; sourceTree = "<group>"; };
+		BA1462CA2C4040770067BF46 /* wrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = wrapper.h; sourceTree = "<group>"; };
+		BA1462CB2C4040770067BF46 /* wrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = wrapper.mm; sourceTree = "<group>"; };
 		BAF8C33E2C3FFE260060C817 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.5.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		BAF8C3402C3FFE300060C817 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.5.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
 		BAF8C3622C4000EF0060C817 /* PJSIPLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PJSIPLibrary.swift; sourceTree = "<group>"; };
+		BAF8C3B32C4024DF0060C817 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.5.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		BAF8C3B52C4024FA0060C817 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS17.5.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAF8C3B62C4024FA0060C817 /* CoreMedia.framework in Frameworks */,
+				BAF8C3B42C4024DF0060C817 /* Foundation.framework in Frameworks */,
 				BA097CF42C3FFDC1004C4CE4 /* libpjmedia-codec.a in Frameworks */,
 				BA097CE92C3FFDC1004C4CE4 /* libgsmcodec.a in Frameworks */,
 				BA097CE72C3FFDC1004C4CE4 /* libpjnath.a in Frameworks */,
@@ -116,6 +130,7 @@
 		BA0970CE2C3FFA6E004C4CE4 /* PJSIPFramework */ = {
 			isa = PBXGroup;
 			children = (
+				BA1462CC2C4040770067BF46 /* PJSua2 */,
 				BAF8C3622C4000EF0060C817 /* PJSIPLibrary.swift */,
 				BA0970CF2C3FFA6E004C4CE4 /* PJSIPFramework.h */,
 				BA0970D02C3FFA6E004C4CE4 /* PJSIPFramework.docc */,
@@ -126,6 +141,8 @@
 		BA0970D82C3FFCF0004C4CE4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BAF8C3B52C4024FA0060C817 /* CoreMedia.framework */,
+				BAF8C3B32C4024DF0060C817 /* Foundation.framework */,
 				BAF8C3402C3FFE300060C817 /* AudioToolbox.framework */,
 				BAF8C33E2C3FFE260060C817 /* AVFoundation.framework */,
 				BA097CE32C3FFDC1004C4CE4 /* libg7221codec.a */,
@@ -152,6 +169,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BA1462CC2C4040770067BF46 /* PJSua2 */ = {
+			isa = PBXGroup;
+			children = (
+				BA1462C82C4040770067BF46 /* CustomPJSUA2.cpp */,
+				BA1462C92C4040770067BF46 /* CustomPJSUA2.hpp */,
+				BA1462CA2C4040770067BF46 /* wrapper.h */,
+				BA1462CB2C4040770067BF46 /* wrapper.mm */,
+			);
+			path = PJSua2;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -159,7 +187,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA1462CF2C4040770067BF46 /* wrapper.h in Headers */,
 				BA0970D22C3FFA6E004C4CE4 /* PJSIPFramework.h in Headers */,
+				BA1462CE2C4040770067BF46 /* CustomPJSUA2.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,7 +262,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BAF8C3632C4000EF0060C817 /* PJSIPLibrary.swift in Sources */,
+				BA1462CD2C4040770067BF46 /* CustomPJSUA2.cpp in Sources */,
 				BA0970D12C3FFA6E004C4CE4 /* PJSIPFramework.docc in Sources */,
+				BA1462D02C4040770067BF46 /* wrapper.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

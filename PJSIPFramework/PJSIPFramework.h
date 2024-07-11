@@ -6,6 +6,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import <PJSIPFramework/wrapper.h>
 
 //! Project version number for PJSIPFramework.
 FOUNDATION_EXPORT double PJSIPFrameworkVersionNumber;
